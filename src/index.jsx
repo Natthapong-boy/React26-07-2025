@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
+//import Hello from './Hello';
+//import Counter from './Counter';
+import Bmi from './Bmi';
 import reportWebVitals from './reportWebVitals';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/*}<Hello name = "Diddy" age = {20}/>{}
+    <Hello  age = {30}/>
+    <Hello name = "Kamare Son Teen" />{*/}
+
+    {/*<Counter/>*/}
+    <Bmi/>
+
+    
   </React.StrictMode>
 );
 

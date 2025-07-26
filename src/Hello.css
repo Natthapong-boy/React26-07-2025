@@ -1,0 +1,16 @@
+#email{
+    text-decoration: underline;
+}
+
+.box{
+    border: 3px solid #3d66e2;
+}
+h1{
+    color: #f90a9d;
+    border: 2px solid #ff0d00;
+}
+h1:hover{
+    color: #22d437;
+    background-color: aquamarine;
+    
+}
