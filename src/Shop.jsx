@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import './Shop.css';
+
 export default function Shop(){
-    const books = [    
+    const [books,setBooks] = useState ([    
 
         { "id": 1, "title": "The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About", "author": "Mel Robbins", "image_url": "https://images-na.ssl-images-amazon.com/images/I/91I1KDnK1kL._AC_UL381_SR381,381_.jpg", "price": 11.69 },
         { "id": 2, "title": "Forgotten Home Apothecary : 250 Powerful Remedies at Your Fingertips", "author": "Dr. Nicole Apelian", "image_url": "https://images-na.ssl-images-amazon.com/images/I/91-E86oM2IL._AC_UL381_SR381,381_.jpg", "price": 37 },
@@ -12,7 +13,24 @@ export default function Shop(){
         { "id": 7, "title": "How to Giggle: A Guide to Taking Life Less Seriously", "author": "Hannah Berner", "image_url": "https://images-na.ssl-images-amazon.com/images/I/81rO3vvG1mL._AC_UL254_SR254,254_.jpg", "price": 20.29 },
         { "id": 8, "title": "Benten", "author": "Diddy", "image_url": "https://www.mumzworld.com/media/catalog/product/cache/8bf0fdee44d330ce9e3c910273b66bb2/f/k/fk-916-37-118-1st-kid-ben10-alien-force-coloring-book-a4-mod37-1523430473.jpg", "price": 17.84 }
  
-    ];
+    ]);
+
+    const url="https://fluffy-carnival-q7vxgrv44624pv5-5001.app.github.dev/books";
+    useEffect(()=>{
+        async function fetchData(){
+            try{
+                const response = await fetch(url);
+                if(response.ok){
+                    console.log('Connected to backend sucessfully!')
+                    const data = await response.json();
+                    setBooks(data.books);
+                }else throw new Error('Failed to fetch data');
+            }catch(error){
+                console.error('Error:',error);
+            }
+        }
+        fetchData();
+    },[])
     const [query,setQuery] = useState("");
     const [cart,setCart] = useState([]);
     const filterlist = books.filter(b=>
@@ -34,7 +52,7 @@ export default function Shop(){
 
     return (<>
     <header>
-        <h1>Book Diddy</h1>
+        <h1>Book Diddy !!!!!!!!!</h1>
         <p>My Store books</p>
         <nav>
             <a href="#">Home</a>
