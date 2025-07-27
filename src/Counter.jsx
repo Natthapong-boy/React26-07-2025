@@ -17,7 +17,6 @@ export default function Counter(){
             <input onChange={(event)=>onTextChange(event)}></input><br/>
             <p>{value} $ is equal to {value * 31} baht</p>
             <p>You typed {value.length} chars</p>
-
             <button onClick={()=>setCount(count + 1)}>Click me ! to Add</button>
             <button onClick={()=>setCount(count - 1)}>Click me ! to Delete</button>
             <button onClick={()=>setCount(0)}>Click me ! to Reset</button>

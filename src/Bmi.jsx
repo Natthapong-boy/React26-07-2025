@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import './Bmi.css';
+//import './Bmi.css';
 function BmiText({ bmi }) {
     if (bmi < 18.5) {
         return (

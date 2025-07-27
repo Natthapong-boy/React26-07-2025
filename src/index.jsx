@@ -4,7 +4,8 @@ import './index.css';
 //import App from './App';
 //import Hello from './Hello';
 //import Counter from './Counter';
-import Bmi from './Bmi';
+//import Bmi from './Bmi';
+import Shop from './Shop';
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +15,8 @@ root.render(
     <Hello name = "Kamare Son Teen" />{*/}
 
     {/*<Counter/>*/}
-    <Bmi/>
-
+    {/*<Bmi/>*/}
+    <Shop/>
     
   </React.StrictMode>
 );

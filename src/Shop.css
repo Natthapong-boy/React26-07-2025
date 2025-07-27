@@ -1,0 +1,154 @@
+/* พื้นหลังแนวรถแข่ง */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0c0c0c url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    color: #f1f1f1;
+}
+
+/* ส่วนหัวแบบไฟนีออน */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff0000, #ff8c00);
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff8c00;
+}
+
+/* กล่องค้นหา */
+.searchbox {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.searchbox input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    outline: none;
+    background: #111;
+    color: #fff;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* การ์ดหนังสือ */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background: #1a1a1a;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,0,0,0.6);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,140,0,0.8);
+}
+
+.book-thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.add-cart-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, #ff0000, #ff8c00);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff4500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-cart-btn:hover {
+    background: linear-gradient(to right, #ff8c00, #ff0000);
+    transform: translateY(-3px);
+}
+
+/* Cart แบบแผงควบคุมรถแข่ง */
+.cart-title {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    text-align: center;
+    color: #ff4500;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.cart-container {
+    background: #1a1a1a;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 0 25px rgba(255,0,0,0.7);
+    text-align: center;
+    border: 2px solid #ff4500;
+}
+
+.cart-container ol {
+    text-align: left;
+    padding-left: 20px;
+    color: #ff8c00;
+}
+
+.cart-total {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.clear-cart-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: linear-gradient(to right, #ff0000, #ff8c00);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px #ff4500;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.clear-cart-btn:hover {
+    background: linear-gradient(to right, #ff8c00, #ff0000);
+    transform: scale(1.05);
+}
